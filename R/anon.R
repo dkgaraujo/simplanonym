@@ -11,7 +11,9 @@
 #'
 #' @returns A list containing the original data, but with consistently anonymised factors
 #'
-#' @example
+#' @examples
+#' library(simplanonym)
+#'
 #' rand_tbl_1 <- vroom::gen_tbl(10, 4, col_types = "fffd")
 #' rand_tbl_2 <- vroom::gen_tbl(10, 2, col_types = "fd")
 #' rand_tbl_2$X3 <- rand_tbl_1$X3
@@ -29,6 +31,7 @@
 #' data_list
 #'
 #' data_list |> anonymise(return_original_levels = TRUE)
+#' @export
 anonymise <- function(data_list, prefix = "", return_original_levels = FALSE) {
   post <- "_anon"
   fcts <- lapply(data_list, function(x) dplyr::select(x, tidyselect::where(is.factor))) |>

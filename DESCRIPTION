@@ -1,6 +1,6 @@
 Package: simplanonym
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Consistent anonymisation across datasets
 Version: 0.1.0
 Author: Douglas Kiarelly Godoy de Araujo
 Maintainer: Douglas Kiarelly Godoy de Araujo <dkg.araujo@gmail.com>
