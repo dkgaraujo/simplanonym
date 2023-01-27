@@ -2,8 +2,10 @@ Package: simplanonym
 Type: Package
 Title: Consistent Anonymisation Across Datasets
 Version: 0.1.0
-Author: Douglas Kiarelly Godoy de Araujo
-Maintainer: Douglas Kiarelly Godoy de Araujo <dkg.araujo@gmail.com>
+Authors@R: person("Douglas", "Kiarelly Godoy de Araujo", 
+                  role = c("aut", "cre"),
+                  comment = c(ORCID = "0000-0001-8070-6828"),
+                  email = "dkg.araujo@gmail.com")
 Description: A simple function that anonymises a list of variables
     in a consistent way: anonymised factors are not recycled and
     the same original levels receive the same anonymised factor
