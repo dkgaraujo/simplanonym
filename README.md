@@ -111,3 +111,8 @@ data_list |> anonymise(return_original_levels = TRUE)
 #>  9 rotten_bee      adorable_panther 01      19      -1.06  
 #> 10 good_chinchilla beautiful_marten 04      04      -0.308
 ```
+
+## Acknowledgements
+
+The hex sticker for the package is based on an icon provided free of charge by www.flaticon.com.
+<a href="https://www.flaticon.com/free-icons/rene-magritte" title="rené magritte icons">René magritte icons created by Freepik - Flaticon</a>
