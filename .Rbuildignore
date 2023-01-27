@@ -1,5 +1,6 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^hexsticker$
+^cran-comments\.md$
 ^LICENSE\.md$
 ^README\.Rmd$
