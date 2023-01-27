@@ -39,7 +39,7 @@ devtools::install_github("dkgaraujo/simplanonym")
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-anlibrary(simplanonym)
+library(simplanonym)
 
 rand_tbl_1 <- vroom::gen_tbl(10, 4, col_types = "fffd")
 rand_tbl_2 <- vroom::gen_tbl(10, 2, col_types = "fd")
@@ -59,6 +59,7 @@ data_list
 
 data_list |> anonymise(return_original_levels = TRUE)
 ```
+
 
 ## Acknowledgements
 
