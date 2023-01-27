@@ -8,7 +8,12 @@ Description: A simple function that anonymises a list of variables
     in a consistent way: anonymised factors are not recycled and
     the same original levels receive the same anonymised factor
     even if located in different datasets.
-License: Apache-2.0 license
+License: Apache License (>= 2)
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3
+URL: https://github.com/dkgaraujo/simplanonym
+BugReports: https://github.com/dkgaraujo/simplanonym/issues
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
