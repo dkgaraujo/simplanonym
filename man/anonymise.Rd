@@ -10,6 +10,11 @@ anonymise(data_list, prefix = "", return_original_levels = FALSE)
 \item{data_list}{A list of data frames or tibbles.}
 
 \item{prefix}{A character prefix to insert in front of the random labels.}
+
+\item{return_original_levels}{Whether or not the resulting list should also include the original, non-anonymised levels. Default: FALSE.}
+}
+\value{
+A list containing the original data, but with consistently anonymised factors
 }
 \description{
 `anonymise()` is a useful function for anonymising factor columns

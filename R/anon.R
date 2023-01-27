@@ -7,7 +7,28 @@
 #'
 #' @param data_list A list of data frames or tibbles.
 #' @param prefix A character prefix to insert in front of the random labels.
-#' @param prefix A character prefix to insert in front of the random labels.
+#' @param return_original_levels Whether or not the resulting list should also include the original, non-anonymised levels. Default: FALSE.
+#'
+#' @returns A list containing the original data, but with consistently anonymised factors
+#'
+#' @example
+#' rand_tbl_1 <- vroom::gen_tbl(10, 4, col_types = "fffd")
+#' rand_tbl_2 <- vroom::gen_tbl(10, 2, col_types = "fd")
+#' rand_tbl_2$X3 <- rand_tbl_1$X3
+#'
+#' # note:
+#' # * rand_tbl_1 and rand_tbl_2 share three column names,
+#' #   of which X2 is a factor in one but not the other.
+#' # * X1 factors do not overlap, but their anonymisation
+#' #   should still be consistent (ie, different levels should
+#' #'#   have their own unique anonymised factors).
+#' # * For X3, the anonymised factors should consider the levels
+#' #   at both `rand_tbl_1$X3` and `rand_tbl_2$X3`.
+#'
+#' data_list <- list(rand_tbl_1, rand_tbl_2)
+#' data_list
+#'
+#' data_list |> anonymise(return_original_levels = TRUE)
 anonymise <- function(data_list, prefix = "", return_original_levels = FALSE) {
   post <- "_anon"
   fcts <- lapply(data_list, function(x) dplyr::select(x, tidyselect::where(is.factor))) |>

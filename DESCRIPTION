@@ -14,6 +14,11 @@ LazyData: true
 RoxygenNote: 7.2.3
 URL: https://github.com/dkgaraujo/simplanonym
 BugReports: https://github.com/dkgaraujo/simplanonym/issues
+Imports:
+    dplyr (>= 1.0.10),
+    forcats (>= 0.5.1),
+    tidyselect (>= 1.2.0)
 Suggests: 
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    vroom (>= 1.5.7)
 Config/testthat/edition: 3
