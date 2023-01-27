@@ -2,10 +2,13 @@ Package: simplanonym
 Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Douglas Kiarelly Godoy de Araujo
+Maintainer: Douglas Kiarelly Godoy de Araujo <dkg.araujo@gmail.com>
+Description: A simple function that anonymises a list of variables
+    in a consistent way: anonymised factors are not recycled and
+    the same original levels receive the same anonymised factor
+    even if located in different datasets.
+License: Apache-2.0 license
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 7.2.3
