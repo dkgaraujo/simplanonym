@@ -39,7 +39,7 @@ devtools::install_github("dkgaraujo/simplanonym")
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-library(simplanonym)
+anlibrary(simplanonym)
 
 rand_tbl_1 <- vroom::gen_tbl(10, 4, col_types = "fffd")
 rand_tbl_2 <- vroom::gen_tbl(10, 2, col_types = "fd")
@@ -60,3 +60,7 @@ data_list
 data_list |> anonymise(return_original_levels = TRUE)
 ```
 
+## Acknowledgements
+
+The hex sticker for the package is based on an icon provided free of charge by www.flaticon.com.
+<a href="https://www.flaticon.com/free-icons/rene-magritte" title="rené magritte icons">René magritte icons created by Freepik - Flaticon</a>
