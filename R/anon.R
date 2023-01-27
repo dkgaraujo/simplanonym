@@ -7,7 +7,7 @@
 #'
 #' @param data_list A list of data frames or tibbles.
 #' @param prefix A character prefix to insert in front of the random labels.
-#' @prefix A character prefix to insert in front of the random labels.
+#' @param prefix A character prefix to insert in front of the random labels.
 anonymise <- function(data_list, prefix = "", return_original_levels = FALSE) {
   post <- "_anon"
   fcts <- lapply(data_list, function(x) dplyr::select(x, tidyselect::where(is.factor))) |>
