@@ -19,11 +19,10 @@ Consistent anonymisation means that:
 ## Installation
 
 You can install the development version of simplanonym from
-[GitHub](https://github.com/) with:
+[CRAN](https://cran.r-project.org/package=simplanonym) with:
 
 ``` r
-# install.packages("devtools")
-devtools::install_github("dkgaraujo/simplanonym")
+install.packages("simplanonym")
 ```
 
 ## Example
