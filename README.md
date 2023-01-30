@@ -18,7 +18,7 @@ Consistent anonymisation means that:
 
 ## Installation
 
-You can install the development version of simplanonym from
+You can install simplanonym from
 [CRAN](https://cran.r-project.org/package=simplanonym) with:
 
 ``` r
